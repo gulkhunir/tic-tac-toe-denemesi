@@ -1,0 +1,62 @@
+h1 {
+  color: orangered;
+  font-size: 55px;
+  text-align: center;
+  margin: auto;
+}
+p {
+  margin: auto;
+  text-align: center;
+  text-shadow: lawngreen;
+  font-family: Verdana, monospace, sans-serif;
+  font-size: 25px;
+  color: lightsalmon;
+}
+.container {
+  margin: auto;
+}
+.row {
+  width: 500px;
+  margin: auto;
+}
+#a1,
+#a2,
+#a3,
+#a4,
+#a5,
+#a6,
+#a7,
+#a8,
+#a9 {
+  box-sizing: border-box;
+  width: 95px;
+  height: 75px;
+  border: 1px solid rgb(30, 255, 30);
+  margin: 2rem;
+  align-content: space-between;
+  justify-content: space-between;
+  border-radius: 4px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(30, 255, 30);
+  color: white;
+  font-size: 55px;
+  cursor: pointer;
+}
+#button {
+  box-sizing: border-box;
+  width: 90px;
+  height: 40px;
+  border: 1px solid dodgerblue;
+  margin: 0 205px;
+  border-radius: 4px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: dodgerblue;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+#result {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: dodgerblue;
+  font-size: 20px;
+}
