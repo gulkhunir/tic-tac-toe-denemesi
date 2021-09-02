@@ -1,315 +1,382 @@
-const a1 = document.getElementById("a1");
-const a2 = document.getElementById("a2");
-const a3 = document.getElementById("a3");
-const a4 = document.getElementById("a4");
-const a5 = document.getElementById("a5");
-const a6 = document.getElementById("a6");
-const a7 = document.getElementById("a7");
-const a8 = document.getElementById("a8");
-const a9 = document.getElementById("a9");
-let b1 = a1.value;
-let b2 = a2.value;
-let b3 = a3.value;
-let b4 = a4.value;
-let b5 = a5.value;
-let b6 = a6.value;
-let b7 = a7.value;
-let b8 = a8.value;
-let b9 = a9.value;
-let flag = 1;
-let result = document.getElementById("result");
-function checking() {
-  if (b1 == "X" && b2 == "X" && b3 == "X") {
-    result.innerHTML = "Player X won";
-    a4.disable = true;
-    a5.disable = true;
-    a6.disable = true;
-    a7.disable = true;
-    a8.disable = true;
-    a9.disable = true;
-    window.alert("Player X won");
-  } else if (b4 == "X" && b5 == "X" && b6 == "X") {
-    result.innerHTML = "Player X won";
-    a1.disable = true;
-    a2.disable = true;
-    a3.disable = true;
-    a7.disable = true;
-    a8.disable = true;
-    a9.disable = true;
-    window.alert("Player X won");
-  } else if (b7 == "X" && b8 == "X" && b9 == "X") {
-    result.innerHTML = "Player X won";
-    a1.disable = true;
-    a2.disable = true;
-    a3.disable = true;
-    a4.disable = true;
-    a5.disable = true;
-    a6.disable = true;
-    window.alert("Player X won");
-  } else if (b1 == "X" && b4 == "X" && b7 == "X") {
-    result.innerHTML = "Player X won";
-    a2.disable = true;
-    a3.disable = true;
-    a5.disable = true;
-    a6.disable = true;
-    a8.disable = true;
-    a9.disable = true;
-    window.alert("Player X won");
-  } else if (b2 == "X" && b5 == "X" && b8 == "X") {
-    result.innerHTML = "Player X won";
-    a1.disable = true;
-    a3.disable = true;
-    a4.disable = true;
-    a6.disable = true;
-    a7.disable = true;
-    a9.disable = true;
-    window.alert("Player X won");
-  } else if (b3 == "X" && b6 == "X" && b9 == "X") {
-    result.innerHTML = "Player X won";
-    a1.disable = true;
-    a2.disable = true;
-    a4.disable = true;
-    a5.disable = true;
-    a7.disable = true;
-    a8.disable = true;
-    window.alert("Player X won");
-  } else if (b3 == "X" && b5 == "X" && b7 == "X") {
-    result.innerHTML = "Player X won";
-    a1.disable = true;
-    a2.disable = true;
-    a4.disable = true;
-    a6.disable = true;
-    a8.disable = true;
-    a9.disable = true;
-    window.alert("Player X won");
-  } else if (b1 == "X" && b5 == "X" && b9 == "X") {
-    result.innerHTML = "Player X won";
-    a2.disable = true;
-    a3.disable = true;
-    a4.disable = true;
-    a6.disable = true;
-    a7.disable = true;
-    a8.disable = true;
-    window.alert("Player X won");
-  } else if (b1 == "O" && b2 == "O" && b3 == "O") {
-    result.innerHTML = "Player O won";
-    a4.disable = true;
-    a5.disable = true;
-    a6.disable = true;
-    a7.disable = true;
-    a8.disable = true;
-    a9.disable = true;
-    window.alert("Player O won");
-  } else if (b4 == "O" && b5 == "O" && b6 == "O") {
-    result.innerHTML = "Player O won";
-    a1.disable = true;
-    a2.disable = true;
-    a3.disable = true;
-    a7.disable = true;
-    a8.disable = true;
-    a9.disable = true;
-    window.alert("Player O won");
-  } else if (b7 == "O" && b8 == "O" && b9 == "O") {
-    result.innerHTML = "Player O won";
-    a1.disable = true;
-    a2.disable = true;
-    a3.disable = true;
-    a4.disable = true;
-    a5.disable = true;
-    a6.disable = true;
-    window.alert("Player O won");
-  } else if (b1 == "O" && b4 == "O" && b7 == "O") {
-    result.innerHTML = "Player O won";
-    a2.disable = true;
-    a3.disable = true;
-    a5.disable = true;
-    a6.disable = true;
-    a8.disable = true;
-    a9.disable = true;
-    window.alert("Player O won");
-  } else if (b2 == "O" && b5 == "O" && b8 == "O") {
-    result.innerHTML = "Player O won";
-    a1.disable = true;
-    a3.disable = true;
-    a4.disable = true;
-    a6.disable = true;
-    a7.disable = true;
-    a9.disable = true;
-    window.alert("Player O won");
-  } else if (b3 == "O" && b6 == "O" && b9 == "O") {
-    result.innerHTML = "Player O won";
-    a1.disable = true;
-    a2.disable = true;
-    a4.disable = true;
-    a5.disable = true;
-    a7.disable = true;
-    a8.disable = true;
-    window.alert("Player O won");
-  } else if (b3 == "O" && b5 == "O" && b7 == "O") {
-    result.innerHTML = "Player O won";
-    a1.disable = true;
-    a2.disable = true;
-    a4.disable = true;
-    a6.disable = true;
-    a8.disable = true;
-    a9.disable = true;
-    window.alert("Player O won");
-  } else if (b1 == "O" && b5 == "O" && b9 == "O") {
-    result.innerHTML = "Player O won";
-    a2.disable = true;
-    a3.disable = true;
-    a4.disable = true;
-    a6.disable = true;
-    a7.disable = true;
-    a8.disable = true;
-    window.alert("Player O won");
-  } else if (
-    (b1 == "X" || b1 == "O") &&
-    (b2 == "X" || b2 == "O") &&
-    (b3 == "X" || b3 == "O") &&
-    (b4 == "X" || b4 == "O") &&
-    (b5 == "X" || b5 == "O") &&
-    (b6 == "X" || b6 == "O") &&
-    (b7 == "X" || b7 == "O") &&
-    (b8 == "X" || b8 == "O") &&
-    (b9 == "X" || b9 == "O")
-  ) {
-    result.innerHTML = "Match Tie";
-    window.alert("Match Tie");
-  } else {
+$(function () {
+  let flag = 1;
+
+  $("#a1").click(function () {
     if (flag == 1) {
-      result.innerHTML = "Player X Turn";
+      $("#a1").text("X");
+      $("#a1").val("X");
+      $("#a1").prop("disabled", true);
+      flag -= 1;
+      checking();
     } else {
-      result.innerHTML = "Player O Turn";
+      $("#a1").text("O");
+      $("#a1").val("O");
+      $("#a1").prop("disabled", true);
+      flag += 1;
+      checking();
+    }
+  });
+  $("#a2").click(function () {
+    if (flag == 1) {
+      $("#a2").text("X");
+      $("#a2").val("X");
+      $("#a2").prop("disabled", true);
+      flag -= 1;
+      checking();
+    } else {
+      $("#a2").text("O");
+      $("#a2").val("O");
+      $("#a2").prop("disabled", true);
+      flag += 1;
+      checking();
+    }
+  });
+  $("#a3").click(function () {
+    if (flag == 1) {
+      $("#a3").text("X");
+      $("#a3").val("X");
+      $("#a3").prop("disabled", true);
+      flag -= 1;
+      checking();
+    } else {
+      $("#a3").text("O");
+      $("#a3").val("O");
+      $("#a3").prop("disabled", true);
+      flag += 1;
+      checking();
+    }
+  });
+  $("#a4").click(function () {
+    if (flag == 1) {
+      $("#a4").text("X");
+      $("#a4").val("X");
+      $("#a4").prop("disabled", true);
+      flag -= 1;
+      checking();
+    } else {
+      $("#a4").text("O");
+      $("#a4").val("O");
+      $("#a4").prop("disabled", true);
+      flag += 1;
+      checking();
+    }
+  });
+  $("#a5").click(function () {
+    if (flag == 1) {
+      $("#a5").text("X");
+      $("#a5").val("X");
+      $("#a5").prop("disabled", true);
+      flag -= 1;
+      checking();
+    } else {
+      $("#a5").text("O");
+      $("#a5").val("O");
+      $("#a5").prop("disabled", true);
+      flag += 1;
+      checking();
+    }
+  });
+  $("#a6").click(function () {
+    if (flag == 1) {
+      $("#a6").text("X");
+      $("#a6").val("X");
+      $("#a6").prop("disabled", true);
+      flag -= 1;
+      checking();
+    } else {
+      $("#a6").text("O");
+      $("#a6").val("O");
+      $("#a6").prop("disabled", true);
+      flag += 1;
+      checking();
+    }
+  });
+  $("#a7").click(function () {
+    if (flag == 1) {
+      $("#a7").text("X");
+      $("#a7").val("X");
+      $("#a7").prop("disabled", true);
+      flag -= 1;
+      checking();
+    } else {
+      $("#a7").text("O");
+      $("#a7").val("O");
+      $("#a7").prop("disabled", true);
+      flag += 1;
+      checking();
+    }
+  });
+  $("#a8").click(function () {
+    if (flag == 1) {
+      $("#a8").text("X");
+      $("#a8").val("X");
+      $("#a8").prop("disabled", true);
+      flag -= 1;
+      checking();
+    } else {
+      $("#a8").text("O");
+      $("#a8").val("O");
+      $("#a8").prop("disabled", true);
+      flag += 1;
+      checking();
+    }
+  });
+  $("#a9").click(function () {
+    if (flag == 1) {
+      $("#a9").text("X");
+      $("#a9").val("X");
+      $("#a9").prop("disabled", true);
+      flag -= 1;
+      checking();
+    } else {
+      $("#a9").text("O");
+      $("#a9").val("O");
+      $("#a9").prop("disabled", true);
+      flag += 1;
+      checking();
+    }
+  });
+
+  $("#button").click(function () {
+    location.reload();
+    $("#a1").val("");
+    $("#a2").val("");
+    $("#a3").val("");
+    $("#a4").val("");
+    $("#a5").val("");
+    $("#a6").val("");
+    $("#a7").val("");
+    $("#a8").val("");
+    $("#a9").val("");
+  });
+  function checking() {
+    if (
+      $("#a1").val() == "X" &&
+      $("#a2").val() == "X" &&
+      $("#a3").val() == "X"
+    ) {
+      $("#result").text("Player X won");
+      $("#a4").prop("disabled", true);
+      $("#a5").prop("disabled", true);
+      $("#a6").prop("disabled", true);
+      $("#a7").prop("disabled", true);
+      $("#a8").prop("disabled", true);
+      $("#a9").prop("disabled", true);
+      alert("GAME OVER!!  ***Player X won***");
+    } else if (
+      $("#a4").val() == "X" &&
+      $("#a5").val() == "X" &&
+      $("#a6").val() == "X"
+    ) {
+      $("#result").text("Player X won");
+      $("#a1").prop("disabled", true);
+      $("#a2").prop("disabled", true);
+      $("#a3").prop("disabled", true);
+      $("#a7").prop("disabled", true);
+      $("#a8").prop("disabled", true);
+      $("#a9").prop("disabled", true);
+      alert("GAME OVER!!  ***Player X won***");
+    } else if (
+      $("#a7").val() == "X" &&
+      $("#a8").val() == "X" &&
+      $("#a9").val() == "X"
+    ) {
+      $("#result").text("Player X won");
+      $("#a1").prop("disabled", true);
+      $("#a2").prop("disabled", true);
+      $("#a3").prop("disabled", true);
+      $("#a4").prop("disabled", true);
+      $("#a5").prop("disabled", true);
+      $("#a6").prop("disabled", true);
+      alert("GAME OVER!!  ***Player X won***");
+    } else if (
+      $("#a1").val() == "X" &&
+      $("#a4").val() == "X" &&
+      $("#a7").val() == "X"
+    ) {
+      $("#result").text("Player X won");
+      $("#a2").prop("disabled", true);
+      $("#a3").prop("disabled", true);
+      $("#a5").prop("disabled", true);
+      $("#a6").prop("disabled", true);
+      $("#a8").prop("disabled", true);
+      $("#a9").prop("disabled", true);
+      alert("GAME OVER!!  ***Player X won***");
+    } else if (
+      $("#a2").val() == "X" &&
+      $("#a5").val() == "X" &&
+      $("#a8").val() == "X"
+    ) {
+      $("#result").text("Player X won");
+      $("#a1").prop("disabled", true);
+      $("#a3").prop("disabled", true);
+      $("#a4").prop("disabled", true);
+      $("#a6").prop("disabled", true);
+      $("#a7").prop("disabled", true);
+      $("#a9").prop("disabled", true);
+      alert("GAME OVER!!  ***Player X won***");
+    } else if (
+      $("#a3").val() == "X" &&
+      $("#a6").val() == "X" &&
+      $("#a9").val() == "X"
+    ) {
+      $("#result").text("Player X won");
+      $("#a1").prop("disabled", true);
+      $("#a2").prop("disabled", true);
+      $("#a4").prop("disabled", true);
+      $("#a5").prop("disabled", true);
+      $("#a7").prop("disabled", true);
+      $("#a8").prop("disabled", true);
+      alert("GAME OVER!!  ***Player X won***");
+    } else if (
+      $("#a3").val() == "X" &&
+      $("#a5").val() == "X" &&
+      $("#a7").val() == "X"
+    ) {
+      $("#result").text("Player X won");
+      $("#a1").prop("disabled", true);
+      $("#a2").prop("disabled", true);
+      $("#a4").prop("disabled", true);
+      $("#a6").prop("disabled", true);
+      $("#a8").prop("disabled", true);
+      $("#a9").prop("disabled", true);
+      alert("GAME OVER!!  ***Player X won***");
+    } else if (
+      $("#a1").val() == "X" &&
+      $("#a5").val() == "X" &&
+      $("#a9").val() == "X"
+    ) {
+      $("#result").text("Player X won");
+      $("#a2").prop("disabled", true);
+      $("#a3").prop("disabled", true);
+      $("#a4").prop("disabled", true);
+      $("#a6").prop("disabled", true);
+      $("#a7").prop("disabled", true);
+      $("#a8").prop("disabled", true);
+      alert("GAME OVER!!  ***Player X won***");
+    } else if (
+      $("#a1").val() == "O" &&
+      $("#a2").val() == "O" &&
+      $("#a3").val() == "O"
+    ) {
+      $("#result").text("Player O won");
+      $("#a4").prop("disabled", true);
+      $("#a5").prop("disabled", true);
+      $("#a6").prop("disabled", true);
+      $("#a7").prop("disabled", true);
+      $("#a8").prop("disabled", true);
+      $("#a9").prop("disabled", true);
+      alert("GAME OVER!!  ***Player O won***");
+    } else if (
+      $("#a4").val() == "O" &&
+      $("#a5").val() == "O" &&
+      $("#a6").val() == "O"
+    ) {
+      $("#result").text("Player O won");
+      $("#a1").prop("disabled", true);
+      $("#a2").prop("disabled", true);
+      $("#a3").prop("disabled", true);
+      $("#a7").prop("disabled", true);
+      $("#a8").prop("disabled", true);
+      $("#a9").prop("disabled", true);
+      alert("GAME OVER!!  ***Player O won***");
+    } else if (
+      $("#a7").val() == "O" &&
+      $("#a8").val() == "O" &&
+      $("#a9").val() == "O"
+    ) {
+      $("#result").text("Player O won");
+      $("#a1").prop("disabled", true);
+      $("#a2").prop("disabled", true);
+      $("#a3").prop("disabled", true);
+      $("#a4").prop("disabled", true);
+      $("#a5").prop("disabled", true);
+      $("#a6").prop("disabled", true);
+      alert("GAME OVER!!  ***Player O won***");
+    } else if (
+      $("#a1").val() == "O" &&
+      $("#a4").val() == "O" &&
+      $("#a7").val() == "O"
+    ) {
+      $("#result").text("Player O won");
+      $("#a2").prop("disabled", true);
+      $("#a3").prop("disabled", true);
+      $("#a5").prop("disabled", true);
+      $("#a6").prop("disabled", true);
+      $("#a8").prop("disabled", true);
+      $("#a9").prop("disabled", true);
+      alert("GAME OVER!!  ***Player O won***");
+    } else if (
+      $("#a2").val() == "O" &&
+      $("#a5").val() == "O" &&
+      $("#a8").val() == "O"
+    ) {
+      $("#result").text("Player O won");
+      $("#a1").prop("disabled", true);
+      $("#a3").prop("disabled", true);
+      $("#a4").prop("disabled", true);
+      $("#a6").prop("disabled", true);
+      $("#a7").prop("disabled", true);
+      $("#a9").prop("disabled", true);
+      alert("GAME OVER!!  ***Player O won***");
+    } else if (
+      $("#a3").val() == "O" &&
+      $("#a6").val() == "O" &&
+      $("#a9").val() == "O"
+    ) {
+      $("#result").text("Player O won");
+      $("#a1").prop("disabled", true);
+      $("#a2").prop("disabled", true);
+      $("#a4").prop("disabled", true);
+      $("#a5").prop("disabled", true);
+      $("#a7").prop("disabled", true);
+      $("#a8").prop("disabled", true);
+      alert("GAME OVER!!  ***Player O won***");
+    } else if (
+      $("#a3").val() == "O" &&
+      $("#a5").val() == "O" &&
+      $("#a7").val() == "O"
+    ) {
+      $("#result").text("Player O won");
+      $("#a1").prop("disabled", true);
+      $("#a2").prop("disabled", true);
+      $("#a4").prop("disabled", true);
+      $("#a6").prop("disabled", true);
+      $("#a8").prop("disabled", true);
+      $("#a9").prop("disabled", true);
+      alert("GAME OVER!!  ***Player O won***");
+    } else if (
+      $("#a1").val() == "O" &&
+      $("#a5").val() == "O" &&
+      $("#a9").val() == "O"
+    ) {
+      $("#result").text = "Player O won";
+      $("#a2").prop("disabled", true);
+      $("#a3").prop("disabled", true);
+      $("#a4").prop("disabled", true);
+      $("#a6").prop("disabled", true);
+      $("#a7").prop("disabled", true);
+      $("#a8").prop("disabled", true);
+      alert("GAME OVER!!  ***Player O won***");
+    } else if (
+      ($("#a1").val() == "X" || $("#a1").val() == "O") &&
+      ($("#a2").val() == "X" || $("#a2").val() == "O") &&
+      ($("#a3").val() == "X" || $("#a3").val() == "O") &&
+      ($("#a4").val() == "X" || $("#a4").val() == "O") &&
+      ($("#a5").val() == "X" || $("#a5").val() == "O") &&
+      ($("#a6").val() == "X" || $("#a6").val() == "O") &&
+      ($("#a7").val() == "X" || $("#a7").val() == "O") &&
+      ($("#a8").val() == "X" || $("#a8").val() == "O") &&
+      ($("#a9").val() == "X" || $("#a9").val() == "O")
+    ) {
+      $("#result").text("Match Tie");
+      alert("GAME OVER!!  ***Match Tie*** Let's Play TieBreaker");
+    } else {
+      if (flag == 1) {
+        $("#result").text("Player X Turn");
+      } else {
+        $("#result").text("Player O Turn");
+      }
     }
   }
-}
-function reset() {
-  location.reload();
-  b1 = "";
-  b2 = "";
-  b3 = "";
-  b4 = "";
-  b5 = "";
-  b6 = "";
-  b7 = "";
-  b8 = "";
-  b9 = "";
-}
-function func1() {
-  if (flag == 1) {
-    a1.innerHTML = "X";
-    b1 = "X";
-    a1.disable = true;
-    flag = 0;
-  } else {
-    a1.innerHTML = "O";
-    b1 = "O";
-    a1.disable = true;
-    flag = 1;
-  }
-}
-function func2() {
-  if (flag == 1) {
-    a2.innerHTML = "X";
-    b2 = "X";
-    a2.disable = true;
-    flag = 0;
-  } else {
-    a2.innerHTML = "O";
-    b2 = "o";
-    a2.disable = true;
-    flag = 1;
-  }
-}
-function func3() {
-  if (flag == 1) {
-    a3.innerHTML = "X";
-    b3 = "X";
-    a3.disable = true;
-    flag = 0;
-  } else {
-    a3.innerHTML = "O";
-    b3 = "O";
-    a3.disable = true;
-    flag = 1;
-  }
-}
-function func4() {
-  if (flag == 1) {
-    a4.innerHTML = "X";
-    b4 = "X";
-    a4.disable = true;
-    flag = 0;
-  } else {
-    a4.innerHTML = "O";
-    b4 = "O";
-    a4.disable = true;
-    flag = 1;
-  }
-}
-function func5() {
-  if (flag == 1) {
-    a5.innerHTML = "X";
-    b5 = "X";
-    a5.disable = true;
-    flag = 0;
-  } else {
-    a5.innerHTML = "O";
-    b5 = "O";
-    a5.disable = true;
-    flag = 1;
-  }
-}
-function func6() {
-  if (flag == 1) {
-    a6.innerHTML = "X";
-    b6 = "X";
-    a6.disable = true;
-    flag = 0;
-  } else {
-    a6.innerHTML = "O";
-    b6 = "O";
-    a6.disable = true;
-    flag = 1;
-  }
-}
-function func7() {
-  if (flag == 1) {
-    a7.innerHTML = "X";
-    b7 = "X";
-    a7.disable = true;
-    flag = 0;
-  } else {
-    a7.innerHTML = "O";
-    b7 = "O";
-    a7.disable = true;
-    flag = 1;
-  }
-}
-function func8() {
-  if (flag == 1) {
-    a8.innerHTML = "X";
-    b8 = "X";
-    a8.disable = true;
-    flag = 0;
-  } else {
-    a8.innerHTML = "O";
-    b8 = "O";
-    a8.disable = true;
-    flag = 1;
-  }
-}
-function func9() {
-  if (flag == 1) {
-    a9.innerHTML = "X";
-    b9 = "X";
-    a9.disable = true;
-    flag = 0;
-  } else {
-    a9.innerHTML = "O";
-    b9 = "O";
-    a9.disable = true;
-    flag = 1;
-  }
-}
+});
